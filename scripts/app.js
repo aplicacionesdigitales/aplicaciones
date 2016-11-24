@@ -88,7 +88,7 @@ var app = angular.module("app", ["ngRoute", "ngResource"])
 
 .factory('Videos', function ($resource)
 {
-return $resource("http://localhost/restangularjslaravel/public/videos/:id", {id:"@_id"}, {
+return $resource("http://siteavanza.com/videos/:id", {id:"@_id"}, {
 	update: {method: "PUT", params: {id: "@id"}}
 })
 })
