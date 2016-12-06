@@ -1,0 +1,17 @@
+<div class="col-sm-4 col-sm-offset-4 login">
+
+		<h3>Acceso de usuarios</h3>
+		<form class="ng-pristine ng-valid ng-valid-email ng-submitted">
+			<!-- ngIf: auth.loginError --><p class="alert alert-danger ng-binding ng-scope" ng-if="auth.loginError"><strong>Error:</strong> invalid_credentials</p><!-- end ngIf: auth.loginError -->
+			<div class="form-group">
+		    	<input type="email" class="form-control ng-pristine ng-untouched ng-valid ng-valid-email" placeholder="Email" ng-model="auth.email">
+		  	</div>
+		  	<div class="form-group">
+		    	<input type="password" class="form-control ng-pristine ng-untouched ng-valid" placeholder="Password" ng-model="auth.password">
+		  	</div>
+		  	<button class="btn btn-primary" ng-click="auth.login()">Submit</button>
+		  	
+		</form>
+
+</div>
+
